@@ -1,0 +1,75 @@
+#main1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(162, 25, 196);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 30px;
+}
+#nomain1 { 
+    color: rgb(255, 255, 255);
+    background-color: rgb(121, 114, 118);
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+#nomain2 { 
+    color: seashell;
+    background-color: rgb(121, 114, 118);
+}
+
+.nomain3 {
+    color: rgb(143, 63, 140);
+    text-align: center;
+    font-size: larger;
+}
+.nomain4 {
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    border: 2px solid black;
+}
+.link {
+    font-size: larger;
+}
+#main2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(162, 25, 196);
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+#nomain5 {
+    color: rgb(143, 63, 140);
+    border: 2px solid black;
+    text-align: center;
+    font-size:large
+}
+#main3 {    
+     color: mistyrose;
+    background-color: rgba(162, 48, 219, 0.812);
+    text-align: center;
+    font-size: x-large;
+}
+#main4 { 
+    color: rgb(255, 255, 255);
+    background-color: rgb(162, 25, 196);
+    text-align: center;
+}
+#nomain6 {
+    color: rgb(143, 63, 140); 
+    text-align: center;
+}
+.ds {
+    color: brown;
+    font-size: larger;
+}
+.email {
+    color: black;
+    border: 2px solid red;
+    font-size: large;
+}
+#nomain7 {
+    color: brown;
+    font-size:large;
+}

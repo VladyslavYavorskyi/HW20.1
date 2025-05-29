@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title> Фото</title>
+    <link rel="stylesheet" href="E:\Test\Domashka\HW_GIT\HW21.1\style.css">
 </head>
 <body>
-    <h1 id="main">Gray's Gallery</h1>
-    <p>Here You can see Gray's photos.</p>
+    <h1 id="main2">Gray's Gallery</h1>
+    <p id="nomain5">Here You can see Gray's photos.</p>
     <img src="E:\Test\Domashka\HW_GIT\HW21.1\Photo/image1.jpg" alt="Gray's photo 1">
     <img src="E:\Test\Domashka\HW_GIT\HW21.1\Photo/image2.jpg" alt="Gray's photo 2">
-    <p>Please press "LIKE" button if u like it.</p>
-    <button>LIKE</button>
+    <p id="nomain5">Please press "LIKE" button if u like it.</p>
+    <button id="bt">LIKE</button>
+
+    <script>
+        document.getElementById('bt').addEventListener('click', function() {
+            alert('Thank you for your Like!');
+        });
+
+        console.log("JS")
+    </script>
 </body>
