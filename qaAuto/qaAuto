@@ -35,7 +35,7 @@ INSERT INTO car_models (id, title) VALUES
 (2, 'X5');
 
 INSERT INTO users (id, firstName, lastName, email, password) VALUES
-(1, 'Ivan', "Petrenko", 'ivan.petrenko@gmail.com', 'qwerty12345'),
+(1, 'Ivan', 'Petrenko', 'ivan.petrenko@gmail.com', 'qwerty12345'),
 (2, 'Oleh', 'Ivanov', 'oleh.ivanov@gmail.com', '12345qwerty');
 
 INSERT INTO cars (id, mileage, initialMilleage) VALUES
