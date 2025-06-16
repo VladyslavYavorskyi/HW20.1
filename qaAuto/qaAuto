@@ -1,0 +1,43 @@
+CREATE TABLE car_brands (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    title VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE car_models (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    FOREIGN KEY (carBrandId) REFERENCES car_brands(id),
+    title VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    firstName VARCHAR(50) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE cars (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    FOREIGN KEY (userId) REFERENCES users(id),
+    FOREIGN KEY (carBrandId) REFERENCES car_brands(id),
+    FOREIGN KEY (carModelId) REFERENCES car_models(id),
+    mileage INT NOT NULL,
+    initialMilleage INT NOT NULL
+);
+
+INSERT INTO car_brands (id, title) VALUES
+(1, 'Audi'),
+(2, 'BMW');
+
+INSERT INTO car_models (id, title) VALUES
+(1, 'TT'),
+(2, 'X5');
+
+INSERT INTO users (id, firstName, lastName, email, password) VALUES
+(1, 'Ivan', "Petrenko", 'ivan.petrenko@gmail.com', 'qwerty12345'),
+(2, 'Oleh', 'Ivanov', 'oleh.ivanov@gmail.com', '12345qwerty');
+
+INSERT INTO cars (id, mileage, initialMilleage) VALUES
+(1, '120000', '100000'),
+(2, '135000', '105000');
