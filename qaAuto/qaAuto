@@ -26,6 +26,12 @@ CREATE TABLE cars (
     initialMilleage INT NOT NULL
 );
 
+ALTER TABLE car_models ADD COLUMN carBrandId INT NOT NULL;
+
+ALTER TABLE cars ADD COLUMN userId INT NOT NULL;
+ALTER TABLE cars ADD COLUMN carBrandId INT NOT NULL;
+ALTER TABLE cars ADD COLUMN carModelId INT NOT NULL;
+
 INSERT INTO car_brands (id, title) VALUES
 (1, 'Audi'),
 (2, 'BMW');
