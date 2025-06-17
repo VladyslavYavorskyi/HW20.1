@@ -1,0 +1,24 @@
+SELECT * 
+FROM user_profiles 
+WHERE name LIKE '%am%';
+
+SELECT MAX(totalCost) AS maxAudiExpense
+FROM expenses
+INNER JOIN cars ON expenses.carId = cars.id
+WHERE cars.carBrandId = 1;
+
+SELECT car_models.carBrandId AS car_id, COUNT(car_models.title) AS count_models
+FROM car_models
+INNER JOIN car_brands ON car_models.carBrandId = car_brands.id
+WHERE car_brands.id IN (1,2)
+GROUP BY car_models.carBrandId;
+
+SELECT carBrandId AS car_brand, carModelId AS car_model, COUNT(userId) AS user_count
+FROM cars
+GROUP BY carModelId;
+
+SELECT name 
+FROM user_profiles
+INNER JOIN cars ON user_profiles.userId = cars.userId
+GROUP BY user_profiles.name
+HAVING COUNT(cars.id) >= 1;
